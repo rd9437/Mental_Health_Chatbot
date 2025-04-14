@@ -49,7 +49,7 @@ example = st.selectbox("Or try one of these examples:", examples)
 user_input = st.text_input("You:")
 
 if user_input:
-      prediction = model.predict([user_input])[0]
+    prediction = model.predict([user_input])[0]
     st.markdown(f"**Predicted Sentiment:** `{prediction}`")
 
     if prediction == "negative":
